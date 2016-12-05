@@ -19,26 +19,53 @@ Once the project moves into development, the press release can be used as a touc
 ## Heading ##
   > Name the product in a way the reader (i.e. your target customers) will understand.
 
+  newsly
+
+
 ## Sub-Heading ##
   > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+
+  your aggregated world news hotspot
+
 
 ## Summary ##
   > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
 
+  Stay up-to-date on world news with newsly. Browse top stories. Save your favorite articles. It's that simple.
+
+
 ## Problem ##
   > Describe the problem your product solves.
+
+  Stop waisting time sifting through many news sites for the top stories.
+
 
 ## Solution ##
   > Describe how your product elegantly solves the problem.
 
+  newsly makes allows easy access to top stories from many news sources by allowing its users to view and save articles from r/worldnews.
+
+
 ## Quote from You ##
   > A quote from a spokesperson in your company.
+
+  newsly is the breadth and depth of world news. 
+
 
 ## How to Get Started ##
   > Describe how easy it is to get started.
 
+  Using newsly is easy. No account required. 
+
+
 ## Customer Quote ##
   > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
 
+  newsly simplifies browsing world news. It's my goto for the top stories from a plethora of sources.
+
+
 ## Closing and Call to Action ##
   > Wrap it up and give pointers where the reader should go next.
+
+  Join the newsly community. 
+
