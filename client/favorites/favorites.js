@@ -2,6 +2,10 @@
 
 var fav = angular.module('newsly.favorites', []);
 
-fav.controller('FavCtrl', function($scope) {
+fav.controller('FavCtrl', function($scope, $location) {
+
+  $scope.go = function(view) {
+    $location.path(view);
+  };
 
 });

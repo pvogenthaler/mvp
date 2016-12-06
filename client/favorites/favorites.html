@@ -1,3 +1,15 @@
-<div ng-controller="FavCtrl">
-  <p>favorites</p>
+<div ng-controller="FavCtrl" class="container">
+
+  <nav> 
+    <ul>
+      <li>
+        <a ng-click="go('/feed')">feed</a>
+      </li>
+      <li>
+        <a ng-click="go('/favorites')">favorites</a>
+      </li>
+    </ul>
+  </nav>
+
+  <h3>favorites</h3>
 </div>

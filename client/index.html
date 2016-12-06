@@ -10,10 +10,13 @@
   </head>
 
   <body>
-    <header>newsly</header>
+    <header>
+      <span>welcome to newsly</span>
+      <input type="text" ng-model="search" placeholder="filter"/>
+    </header>
 
     <!-- angular template -->
-    <div ng-view></div>
+    <div ng-view class="view"></div>
     
     <!-- angular files -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>

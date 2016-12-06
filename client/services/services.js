@@ -4,19 +4,22 @@ var services = angular.module('newsly.services', []);
 
 services.factory('Services', function($http) {
 
+  // api get request
   var getFeed = function () {
     return $http({
       method: 'GET',
-      url: '/api/feed'
+      url: 'https://www.reddit.com/r/worldnews/new.json?sort=hot&limit=75'
     }).then(function(res) {
-      // do somthing here
+      return res.data;
     });
   };
 
+
+  // requests to server
   var getFavs = function () {
     return $http({
       method: 'GET',
-      url: '/api/favorites'
+      url: '/'
     }).then(function(res) {
       // do somthing here
     });
@@ -25,7 +28,7 @@ services.factory('Services', function($http) {
   var addFav = function (fav) {
     return $http({
       method: 'POST',
-      url: '/api/favorites',
+      url: '/',
       data: fav
     }).then(function(res) {
       // do something here
@@ -35,7 +38,7 @@ services.factory('Services', function($http) {
   var removeFav = function (fav) {
     return $http({ // optional
       method: 'DELETE',     
-      url: 'api/favorites',
+      url: '',
       data: fav
     }).then(function(res) {
       // do somthing here

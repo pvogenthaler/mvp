@@ -9,16 +9,19 @@ var app = angular.module('newsly', [
 ]);
 
 app.config(function($routeProvider) {  // todo: if time permits, add '/login' route
-  $routeProvider                          
+  $routeProvider   
     .when('/', {
+      redirectTo: '/feed'
+    })                       
+    .when('/feed', {
       templateUrl: 'feed/feed.html',
       controller: 'FeedCtrl'
     })
     .when('/favorites', {
-      tempalteUrl: 'favorites/favorites.html',
+      templateUrl: 'favorites/favorites.html',
       controller: 'FavCtrl'
     })
     .otherwise({
-      redirectTo: '/'
+      redirectTo: '/feed'
     });
 });

@@ -1,4 +1,30 @@
-<div ng-controller="FeedCtrl">
-  <p>feed</p>
+<div ng-controller="FeedCtrl" class="feed">
+
+  <nav> 
+    <ul>
+      <li>
+        <a ng-click="go('/feed')">feed</a>
+      </li>
+      <li>
+        <a ng-click="go('/favorites')">favorites</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="articles">
+
+    <div class="article" ng-repeat="article in articles | filter:search">
+      <div> 
+        <a class="title" href={{article.data.url}}>{{article.data.title}}</a> 
+      </div>
+
+      <div class="info"> 
+        <a class="domain" href="https://www.{{article.data.domain}}">{{article.data.domain}}</a> 
+        <span class="favBtn">favorite</span> 
+      </div>
+
+    </div>
+
+  </div>
 
 </div>
