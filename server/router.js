@@ -5,11 +5,11 @@ var express = require('express');
 var app = express();
 
 module.exports = (function() {
-  var api = express.Router();
+  var route = express.Router();
 
-  api.get('/api', function (req, res) {
-    res.send('/api req');
+  route.get('/', function (req, res) {
+    res.send('/ req');
   });
 
-  return api;
+  return route;
 })();

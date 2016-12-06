@@ -8,7 +8,7 @@ var app = express();  // create server
 
 
 app.use(express.static(path.resolve(__dirname, '../client')));  // send client directory
-app.use('/api', router);  // use router for '/api' routes
+app.use('/', router);  // use router for '/api' routes
 
 
 
