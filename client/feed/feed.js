@@ -1,5 +1,9 @@
-var feed = angluar.module('newsly.feed', []);
+// purpose: create feed controller
 
-feed.controller('Feed', function($scope) {
-  // todo
+var feed = angular.module('newsly.feed', []);
+
+feed.controller('FeedCtrl', function($scope) {
+  
+
+
 });

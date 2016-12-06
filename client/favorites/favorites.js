@@ -1,5 +1,7 @@
-var favorites = angular.module('newsly.favorites', []);
+// purpose: create favorites controller
 
-favorites.controller('Favorites', function($scope) {
+var fav = angular.module('newsly.favorites', []);
+
+fav.controller('FavCtrl', function($scope) {
 
 });

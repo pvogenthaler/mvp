@@ -1,4 +1,6 @@
 <!doctype html>
+
+<!-- specify newsly module for html doc -->
 <html lang="en" ng-app="newsly">
 
   <head>
@@ -8,18 +10,23 @@
   </head>
 
   <body>
-    <header></header>
+    <header>newsly</header>
 
-    <!-- angluar template -->
+    <!-- angular template -->
     <div ng-view></div>
-
-
-    <script type="text/javascript" src="app.js"></script>
     
+    <!-- angular files -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.min.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-resource.min.js"></script>
 
+    <!-- javascript files -->
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="feed/feed.js"></script>
+    <script type="text/javascript" src="favorites/favorites.js"></script>
+    <script type="text/javascript" src="services/services.js"></script>
+
+  
   </body>
 
 </html>

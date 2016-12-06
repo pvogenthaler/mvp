@@ -1,4 +1,6 @@
-var newsly = angular.module('newsly', [
+// purpose: create newsly module & setup template routing
+
+var app = angular.module('newsly', [
   'ngRoute',
   'ngResource',
   'newsly.feed',
@@ -6,15 +8,15 @@ var newsly = angular.module('newsly', [
   'newsly.services'
 ]);
 
-newsly.config(function($routeProvider) {
-  $routeProvider                          // todo if time permits: add '/login' route
+app.config(function($routeProvider) {  // todo: if time permits, add '/login' route
+  $routeProvider                          
     .when('/', {
       templateUrl: 'feed/feed.html',
-      controller: ''
+      controller: 'FeedCtrl'
     })
     .when('/favorites', {
       tempalteUrl: 'favorites/favorites.html',
-      controller: ''
+      controller: 'FavCtrl'
     })
     .otherwise({
       redirectTo: '/'
