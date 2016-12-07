@@ -10,7 +10,7 @@ header {
   font-size: 42px;
   background-color: rgba(105, 105, 105, 0.3);
   height: 55px;
-  color: silver;
+  color: navajowhite;
 }
 input {
   background-color: dimgray;
@@ -54,7 +54,7 @@ input[type=text] {
   color: gray;
 }
 .view nav li a:hover {
-  color: silver;
+  color: paleturquoise;
   font-weight: bold;
   cursor: pointer;
 }
@@ -66,14 +66,14 @@ input[type=text] {
 /* view */
 
 .view .article {
-  background-color: rgba(105, 105, 105, 0.5);
+  background-color: rgba(75, 75, 75, 0.9);
   margin: 5px 0 5px 0;
   padding: 10px 10px 10px 10px;
   color: black;
 }
 .view a {
   text-decoration: none;
-  color: black;
+  color: silver;
   margin: 1px 0 1px 0;
 }
 .view .title {
@@ -88,5 +88,11 @@ input[type=text] {
 }
 .view .domain:hover, .favBtn:hover, .rmBtn:hover {
   cursor: pointer;
+}
+.view .favBtn {
+  color: mediumvioletred;
+}
+.view .rmBtn {
+  color: orangered;
 }
 
