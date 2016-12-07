@@ -1,5 +1,6 @@
-<div ng-controller="FavCtrl" class="container">
+<div ng-controller="FavCtrl">
 
+<!-- navigation menu -->
   <nav> 
     <ul>
       <li>
@@ -11,5 +12,16 @@
     </ul>
   </nav>
 
-  <h3>favorites</h3>
+  <!-- fav articles -->
+  <div class="articles">
+    <div class="article" ng-repeat="article in articles |filter:search">
+      <div class="title">
+      <a href={{article.data.url}}>{{article.data.title}}</a>
+      </div>
+      <div class="info">
+        <a class="domain" href="https://www.{{article.data.domain}}">{{article.data.domain}}</a>
+        <span class="rmBtn">remove</span>
+      </div>
+    </div>
+
 </div>

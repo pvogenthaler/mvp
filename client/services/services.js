@@ -9,8 +9,6 @@ services.factory('Services', function($http) {
     return $http({
       method: 'GET',
       url: 'https://www.reddit.com/r/worldnews/new.json?sort=hot&limit=75'
-    }).then(function(res) {
-      return res.data;
     });
   };
 
@@ -20,8 +18,6 @@ services.factory('Services', function($http) {
     return $http({
       method: 'GET',
       url: '/'
-    }).then(function(res) {
-      // do somthing here
     });
   };
 
@@ -30,8 +26,6 @@ services.factory('Services', function($http) {
       method: 'POST',
       url: '/',
       data: fav
-    }).then(function(res) {
-      // do something here
     });
   };
 
@@ -40,14 +34,12 @@ services.factory('Services', function($http) {
       method: 'DELETE',     
       url: '',
       data: fav
-    }).then(function(res) {
-      // do somthing here
     });
   };
 
   return {
     getFeed: getFeed,
-    getFav: getFavs,
+    getFavs: getFavs,
     addFav: addFav,
     removeFav: removeFav
   };

@@ -1,89 +1,92 @@
+/* general */
+
 body {
   text-align: center;
   font-family: "Lucida" Grande, sans-serif;
   background-image: url("https://s-media-cache-ak0.pinimg.com/originals/dd/17/f6/dd17f6597567e9fed0f761ac1063397e.jpg");
   color: gray;
 }
-
 header {
-  font-size: 36px;
+  font-size: 42px;
   background-color: rgba(105, 105, 105, 0.3);
+  height: 55px;
+  color: silver;
 }
-
 input {
   background-color: dimgray;
   opacity: 0.7;
   position: absolute;
   right: 10px;
 }
-
 input[type=text] {
   padding: 5px 20px 5px 20px;
   box-sizing: border-box;
   outline-color: dimgray;
+  border: none;
   border-color: dimgray;
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
-  margin: 5px 0 5px 0;
+  margin: 10px 5px 10px 0;
+  height: 35px;
 }
-
 .view {
   margin: 5px 20% 5px 20%;
 }
 
-.view nav {
-  background-color: rgba(105, 105, 105, 0.5);
-}
 
+/* navigation */
+
+.view nav {
+  background-color: rgba(105, 105, 105, 0.3);
+}
 .view nav ul {
   margin: 0;
   padding: 0px;
   list-style-type: none;
   display: inline-block;
 }
-
 .view nav li {
   float: left;
   margin: 5px;
   font-size: 24px;
 }
-
+.view nav li a {
+  color: gray;
+}
 .view nav li a:hover {
+  color: silver;
   font-weight: bold;
   cursor: pointer;
 }
 
-.view nav li a.selected {
-  color: gray;
-}
+/* todo: .view nav li a.selected */
 
-.feed .article {
+
+
+/* view */
+
+.view .article {
   background-color: rgba(105, 105, 105, 0.5);
   margin: 5px 0 5px 0;
   padding: 10px 10px 10px 10px;
   color: black;
 }
-
-.feed a {
+.view a {
   text-decoration: none;
   color: black;
   margin: 1px 0 1px 0;
 }
-
-.feed .title {
+.view .title {
   font-size: 20px;
 }
-
-.feed .title:hover {
+.view .title:hover {
   color: gray;
   cursor: pointer;
 }
-
-.feed .domain, .feed .favBtn {
+.view .domain, .favBtn, .rmBtn {
   margin: 0 5px 0 5px;
 }
-
-.feed .domain:hover, .favBtn:hover {
+.view .domain:hover, .favBtn:hover, .rmBtn:hover {
   cursor: pointer;
 }
 
