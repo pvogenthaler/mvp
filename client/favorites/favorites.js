@@ -32,16 +32,18 @@ fav.controller('FavCtrl', function($scope, $location, Services) {
 
   Services.getFavs()
   .then(function(res) {
-    // console.log('fav get res: ', res);
-    $scope.articles = res.data.data.children;
+    console.log('fav get res: ', res);
+    // $scope.articles = res.data.data.children;
   }).catch(function(err) {
     console.log('error on fav get req: ', err);
   });
 
-
-
   $scope.go = function(view) {
     $location.path(view);
+  };
+
+  $scope.hideFav = function(article) {
+    article.hide = true;
   };
 
 });

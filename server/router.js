@@ -11,16 +11,12 @@ module.exports = (function() {
   var route = express.Router();
 
   route.post('/', function (req, res) {
-    // console.log("THIS IS REQ", req.body.data.title); // this works!!!
-
     var newFav = new Favorite({
       article: req.body.data
     });
 
-    console.log('NEW FAV!!!!!!!!!!', newFav);
-
     newFav.save().then(function() {
-      console.log('connected!');
+      console.log('saved fav in db!');
     });
   });
 
@@ -29,6 +25,7 @@ module.exports = (function() {
       if (err) {
         console.log(err);
       }
+      console.log(articles);
       res.send(articles);
     });
   });
