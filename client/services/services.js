@@ -8,7 +8,7 @@ services.factory('Services', function($http) {
   var getFeed = function () {
     return $http({
       method: 'GET',
-      url: 'https://www.reddit.com/r/worldnews/new.json?sort=hot&limit=75'
+      url: 'https://www.reddit.com/r/worldnews/new.json?sort=hot&limit=100'
     });
   };
 
