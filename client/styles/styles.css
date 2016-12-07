@@ -91,6 +91,7 @@ input[type=text] {
 }
 .view .favBtn {
   color: mediumvioletred;
+  opacity: 0.8;
 }
 .view .rmBtn {
   color: orangered;

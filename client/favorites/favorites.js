@@ -42,8 +42,11 @@ fav.controller('FavCtrl', function($scope, $location, Services) {
     $location.path(view);
   };
 
+  $scope.hidden;
+
   $scope.hideFav = function(article) {
     article.hide = true;
+    console.log(article.hide);
   };
 
 });
