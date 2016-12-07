@@ -17,9 +17,11 @@ module.exports = (function() {
       article: req.body.data
     });
 
-    // console.log('newfav', newFav);
-    newFav.save();
+    console.log('NEW FAV!!!!!!!!!!', newFav);
 
+    newFav.save().then(function() {
+      console.log('connected!');
+    });
   });
 
   route.get('/', function (req, res) {
